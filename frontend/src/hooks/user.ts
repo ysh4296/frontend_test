@@ -1,11 +1,11 @@
 import { create } from "zustand"; // create로 zustand를 불러옵니다.
 
-interface TuserStore {
+interface TUserStore {
   userName: string;
   setUserName: (value: string) => void;
 }
 
-const useUserStore = create<TuserStore>()((set) => ({
+const useUserStore = create<TUserStore>()((set) => ({
   userName: "",
   setUserName: (value) => set(() => ({ userName: value })),
 }));
