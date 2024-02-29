@@ -1,7 +1,7 @@
 import axios, { AxiosError, AxiosInstance, AxiosResponse } from "axios";
 
 export const axiosInstance: AxiosInstance = axios.create({
-  baseURL: "https://localhost:3000",
+  baseURL: "https://koreanjson.com",
 });
 
 axiosInstance.interceptors.response.use(
