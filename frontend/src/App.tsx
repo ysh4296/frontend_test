@@ -13,10 +13,12 @@ function App() {
 
   return (
     <div>
-      <p>{userName}</p>
       {!isLoading &&
         data.map((data: any, index: number) => <p key={index}>{data.name}</p>)}
       <input type="text" onChange={(e) => setUserName(e.target.value)} />
+      <textarea className="caret-pink-500"></textarea>
+      <p>{userName}</p>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
     </div>
   );
 }
